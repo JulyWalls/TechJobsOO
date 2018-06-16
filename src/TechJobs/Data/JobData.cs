@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TechJobs.Models;
 
+
 namespace TechJobs.Data
 {
     class JobData
@@ -18,7 +19,7 @@ namespace TechJobs.Data
         public JobFieldData<CoreCompetency> CoreCompetencies { get; set; } = new JobFieldData<CoreCompetency>();
 
 
-        private JobData()
+        private JobData() 
         {
             JobDataImporter.LoadData(this);
         }
